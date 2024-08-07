@@ -10,10 +10,9 @@ def main():
         cote2: int = int(input('cote2'))
         hypothenuse: int = int(input('hypothénuse'))
         result=function.classique3(cote1,cote2)
-        hypothenuse2=hypothenuse*hypothenuse
-        if result==hypothenuse2 :
+        if result==hypothenuse*hypothenuse :
             print('Le triangle ABC est rectangle')
-        if result!=hypothenuse2:
+        if result!=hypothenuse*hypothenuse:
             print('Le triangle ABC n est pas rectangle')
 
     if mainchoice == '1':

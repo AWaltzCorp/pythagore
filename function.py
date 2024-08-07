@@ -7,5 +7,9 @@ def classique(a, b):
 
 
 def classique2(a, b):
-    result = a*a-b*b
+    result = a * a - b * b
     print(sqrt(result))
+
+
+def classique3(a, b):
+    result = (a * a) + (b * b)

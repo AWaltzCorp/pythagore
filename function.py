@@ -1,4 +1,7 @@
 from math import *
+import web_pdb;
+
+web_pdb.set_trace()
 
 
 def classique(a, b):
@@ -11,5 +14,5 @@ def classique2(a, b):
     print(sqrt(result))
 
 
-def classique3(a, b):
+def reciproque(a, b):
     result = (a * a) + (b * b)

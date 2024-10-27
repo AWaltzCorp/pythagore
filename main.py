@@ -1,34 +1,33 @@
-from math import *
-import function
-import web_pdb;
 
-web_pdb.set_trace()
+from math import *
+import function as f
 
 
 def main():
-    mainchoice = input('Faites votre choix 1) Classique 2) Réciproque'
-                       )
+    mainchoice = input('Faites votre choix 1) Classique 2) Réciproque: ')
+
     if mainchoice == '2':
-        cote1: int = int(input('coté1'))
-        cote2: int = int(input('cote2'))
-        hypothenuse: int = int(input('hypothénuse'))
-        result = function.reciproque(cote1, cote2)
-        if result ==(hypothenuse * hypothenuse):
+        cote1 = int(input('côté1: '))
+        cote2 = int(input('côté2: '))
+        hypothenuse = int(input('hypothénuse: '))
+        result = f.reciproque(cote1, cote2)
+        if result == (hypothenuse * hypothenuse):
             print('Le triangle ABC est rectangle')
-        if result != (hypothenuse * hypothenuse):
-            print('Le triangle ABC n est pas rectangle')
+        else:
+            print('Le triangle ABC n\'est pas rectangle')
 
-    if mainchoice == '1':
-        secondchoice = input('longueur à calculer : 1) hypothénuse 2) coté autre')
+    elif mainchoice == '1':
+        secondchoice = input('Longueur à calculer : 1) hypothénuse 2) autre côté: ')
+
         if secondchoice == '2':
-            hypothenuse: int = int(input('hypothénuse'))
-            cote2: int = int(input('cote2'))
-            function.classique2(hypothenuse, cote2)
+            hypothenuse = int(input('hypothénuse: '))
+            cote2 = int(input('côté: '))
+            print(f'Longueur du côté calculée : {f.classique2(hypothenuse, cote2)}')
 
-        if secondchoice == '1':
-            cote1: int = int(input('coté1'))
-            cote2: int = int(input('cote2'))
-            function.classique(cote1, cote2)
+        elif secondchoice == '1':
+            cote1 = int(input('côté1: '))
+            cote2 = int(input('côté2: '))
+            print(f'Hypothénuse calculée : {f.classique(cote1, cote2)}')
 
 
 main()
